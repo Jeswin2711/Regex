@@ -17,6 +17,9 @@ public class RegexMain
         System.out.println("Enter Last Name : ");
         String lname = sc.next();
         regex.setLastName(lname);
+        System.out.println("Enter Email ID : ");
+        String email = sc.next();
+        regex.setEmailId(email);
         System.out.println(regex);
     }
 }
