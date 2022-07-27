@@ -23,6 +23,9 @@ public class RegexMain
         System.out.println("Enter Email ID : ");
         String email = sc.next();
         regex.setEmailId(email);
+        System.out.println("Enter Password : ");
+        String pwd = sc.next();
+        regex.setPassWord(pwd);
         System.out.println(regex);
     }
 }

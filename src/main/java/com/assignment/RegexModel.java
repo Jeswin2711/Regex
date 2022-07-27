@@ -9,7 +9,19 @@ public class RegexModel
     private String lastName;
     private String emailId;
     private String phoneNo;
+    private String passWord;
 
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        if(Validator.isValidPassword(passWord))
+        {
+            this.passWord = passWord;
+        }
+        else System.out.println("Enter Valid Password");
+    }
 
     public String getPhoneNo() {
         return phoneNo;
@@ -68,6 +80,7 @@ public class RegexModel
                 ", lastName='" + lastName + '\'' +
                 ", emailId='" + emailId + '\'' +
                 ", phoneNo='" + phoneNo + '\'' +
+                ", passWord='" + passWord + '\'' +
                 '}';
     }
 }
