@@ -27,5 +27,19 @@ public class RegexMain
         String pwd = sc.next();
         regex.setPassWord(pwd);
         System.out.println(regex);
+
+        System.out.println("\nChecking Emails\n");
+        regex.setMail("abc@yahoo.com");
+        regex.setMail("abc-100@yahoo.com");
+        regex.setMail("abc.100@yahoo.com");
+        regex.setMail("abc111@abc.com");
+        regex.setMail("abc-100@abc.net");
+        regex.setMail("abc.100@abc.com.au");
+        regex.setMail("abc@1.com");
+        regex.setMail("abc@gmail.com.com");
+        regex.setMail("abc+100@gmail.com");
+
+
+
     }
 }

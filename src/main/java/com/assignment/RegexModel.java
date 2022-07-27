@@ -10,6 +10,7 @@ public class RegexModel
     private String emailId;
     private String phoneNo;
     private String passWord;
+    private String mail;
 
     public String getPassWord() {
         return passWord;
@@ -71,6 +72,18 @@ public class RegexModel
             this.firstName = firstName;
         }
         else System.out.println("Enter Valid Name");
+    }
+
+    /*
+    Setter method to check the Hardcoded mailIds are Valid or not
+     */
+    public void setMail(String mail) {
+        if(Validator.isValidEmail(mail))
+        {
+            System.out.println(mail + " is Valid Email");
+        }
+        else System.out.println(mail + " is not a Valid Email");
+
     }
 
     @Override
