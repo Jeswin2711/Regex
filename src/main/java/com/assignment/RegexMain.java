@@ -12,11 +12,14 @@ public class RegexMain
         System.out.println("Welcome To Regex Problem");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter First Name : ");
-        String fname = sc.next();
-        regex.setFirstName(fname);
+        String fName = sc.nextLine();
+        regex.setFirstName(fName);
         System.out.println("Enter Last Name : ");
-        String lname = sc.next();
-        regex.setLastName(lname);
+        String lName = sc.nextLine();
+        regex.setLastName(lName);
+        System.out.println("Enter Phone Number : ");
+        String phoneNo = sc.nextLine();
+        regex.setPhoneNo(phoneNo);
         System.out.println("Enter Email ID : ");
         String email = sc.next();
         regex.setEmailId(email);

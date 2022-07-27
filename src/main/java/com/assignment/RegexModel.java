@@ -8,6 +8,21 @@ public class RegexModel
     private String firstName;
     private String lastName;
     private String emailId;
+    private String phoneNo;
+
+
+    public String getPhoneNo() {
+        return phoneNo;
+    }
+
+    public void setPhoneNo(String phoneNo) {
+        if(Validator.isValidPhoneNo(phoneNo))
+        {
+            this.phoneNo = phoneNo;
+        }
+        else System.out.println("Enter Valid Phone Number");
+
+    }
 
     public String getLastName() {
         return lastName;
@@ -26,7 +41,7 @@ public class RegexModel
     }
 
     public void setLastName(String lastName) {
-        if(Validator.isValidFirstName(firstName))
+        if(Validator.isValidLastName(firstName))
         {
             this.lastName = lastName;
         }
@@ -52,6 +67,7 @@ public class RegexModel
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", emailId='" + emailId + '\'' +
+                ", phoneNo='" + phoneNo + '\'' +
                 '}';
     }
 }
