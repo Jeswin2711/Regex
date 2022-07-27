@@ -8,11 +8,10 @@ Validator class to validate the given Strings are Matching the Requirements
  */
 public class Validator
 {
-
     private static final String NAME_REGEX = "^[A-Z][a-z]{2,}$";
     private static final String EMAIL_REGEX = "^[A-Za-z0-9]+([-][A-Za-z0-9]+)?([+][A-Za-z0-9]+)?([.][A-Za-z0-9]+)?[@][a-z0-9]+[.][a-z]{2,3}([.][a-z]{2,3})?$";
     private static final String PHONE_NUMBER_REGEX = "^[0-9]{2}[\\s][1-9][0-9]{9}$";
-    private static final String PASSWORD_REGEX = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&])[a-zA-Z0-9@$!%*?&]{8}$";
+    private static final String PASSWORD_REGEX = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&])[a-zA-Z0-9@$!%*?&]{8,12}$";
     /*
     ?=.* - means at least
      */
@@ -20,7 +19,6 @@ public class Validator
     /*
     isValidName function to return the User entered First Name string Matches the Regex or not
      */
-
     public static boolean isValidFirstName(String fName)
     {
         return Pattern.matches(NAME_REGEX,fName);
