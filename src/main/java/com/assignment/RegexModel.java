@@ -17,11 +17,20 @@ public class RegexModel
     }
 
     public void setPassWord(String passWord) {
-        if(Validator.isValidPassword(passWord))
-        {
-            this.passWord = passWord;
+        /*
+        Using Exception Handling when the entered Password is Invalid
+         */
+        try {
+            if(Validator.isValidPassword(passWord))
+            {
+                this.passWord = passWord;
+            }
+            else throw new RegexException("Password Invalid");
         }
-        else System.out.println("Enter Valid Password");
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
     }
 
     public String getPhoneNo() {
@@ -29,12 +38,20 @@ public class RegexModel
     }
 
     public void setPhoneNo(String phoneNo) {
-        if(Validator.isValidPhoneNo(phoneNo))
-        {
-            this.phoneNo = phoneNo;
+        /*
+        Using Exception Handling when the entered Phone Number is Invalid
+         */
+        try {
+            if(Validator.isValidPhoneNo(phoneNo))
+            {
+                this.phoneNo = phoneNo;
+            }
+            else throw new RegexException("Phone Number Invalid");
         }
-        else System.out.println("Enter Valid Phone Number");
-
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
     }
 
     public String getLastName() {
@@ -46,19 +63,33 @@ public class RegexModel
     }
 
     public void setEmailId(String emailId) {
-        if(Validator.isValidEmail(emailId))
-        {
-            this.emailId = emailId;
+        /*
+        Using Exception Handling when the entered Email Id is Invalid
+         */
+        try {
+            if(Validator.isValidEmail(emailId))
+            {
+                this.emailId = emailId;
+            }
+            else throw new RegexException("Email Id Invalid");
+        } catch (Exception e) {
+            System.out.println(e);
         }
-        else System.out.println("Enter Valid Email Id");
     }
 
     public void setLastName(String lastName) {
-        if(Validator.isValidLastName(firstName))
-        {
-            this.lastName = lastName;
+        /*
+        Using Exception Handling when the entered Last Name is Invalid
+         */
+        try {
+            if(Validator.isValidLastName(lastName))
+            {
+                this.lastName = lastName;
+            }
+            else throw new RegexException("Last Name Invalid");
+        } catch (Exception e) {
+            System.out.println(e);
         }
-        else System.out.println("Enter Valid Name");;
 
     }
 
@@ -67,11 +98,18 @@ public class RegexModel
     }
 
     public void setFirstName(String firstName) {
-        if(Validator.isValidFirstName(firstName))
-        {
-            this.firstName = firstName;
+        /*
+        Using Exception Handling when the entered First Name is Invalid
+         */
+        try {
+            if(Validator.isValidFirstName(firstName))
+            {
+                this.firstName = firstName;
+            }
+            else throw new RegexException("First Name Invalid");
+        } catch (Exception e) {
+            System.out.println(e);
         }
-        else System.out.println("Enter Valid Name");
     }
 
     /*
