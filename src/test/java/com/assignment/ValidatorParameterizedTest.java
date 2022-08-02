@@ -18,6 +18,7 @@ public class ValidatorParameterizedTest
     private String email;
     private boolean expectedResult;
 
+    Validator validator = new Validator();
     /*
     All Args Constructor to assign the Values
      */
@@ -54,7 +55,7 @@ public class ValidatorParameterizedTest
     @Test
     public void givenEmailWhenCheckReturnEmailValidOrNot()
     {
-        boolean result = Validator.isValidEmail(this.email);
+        boolean result = validator.isValidEmail(this.email);
         Assertions.assertEquals(this.expectedResult,result);
     }
 }

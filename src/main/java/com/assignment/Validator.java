@@ -19,7 +19,7 @@ public class Validator
     /*
     isValidName function to return the User entered First Name string Matches the Regex or not
      */
-    public static boolean isValidFirstName(String fName)
+    public  boolean isValidFirstName(String fName)
     {
         return Pattern.matches(NAME_REGEX,fName);
     }
@@ -28,7 +28,7 @@ public class Validator
     isValidName function to return the User entered Last Name string Matches the Regex or not
      */
 
-    public static boolean isValidLastName(String lName)
+    public  boolean isValidLastName(String lName)
     {
         return Pattern.matches(NAME_REGEX,lName);
     }
@@ -37,7 +37,7 @@ public class Validator
     isValidEmail function to return the User Entered Valid email ID or Not
      */
 
-    public static boolean isValidEmail(String email)
+    public  boolean isValidEmail(String email)
     {
         return Pattern.matches(EMAIL_REGEX,email);
     }
@@ -46,11 +46,11 @@ public class Validator
     isValidPhoneNo function to return the User entered Last Name string Matches the Regex or not
      */
 
-    public static boolean isValidPhoneNo(String phoneNo) { return Pattern.matches(PHONE_NUMBER_REGEX,phoneNo);}
+    public  boolean isValidPhoneNo(String phoneNo) { return Pattern.matches(PHONE_NUMBER_REGEX,phoneNo);}
 
     /*
     isValidPassword function to return the User entered Last Name string Matches the Regex or not
      */
 
-    public static boolean isValidPassword(String passWord) { return Pattern.matches(PASSWORD_REGEX,passWord);}
+    public  boolean isValidPassword(String passWord) { return Pattern.matches(PASSWORD_REGEX,passWord);}
 }

@@ -14,10 +14,11 @@ class ValidatorTest
     /*
     Test for Check First Name is Valid
      */
+    Validator validator = new Validator();
     @Test
     public void givenFirstNameWhenCheckReturnValidOrNot()
     {
-        boolean result = Validator.isValidFirstName("Jeswin");
+        boolean result = validator.isValidFirstName("Jeswin");
         Assertions.assertEquals(result,true);
     }
     /*
@@ -26,7 +27,7 @@ class ValidatorTest
     @Test
     public void givenLastNameWhenCheckReturnValidOrNot()
     {
-        boolean result = Validator.isValidLastName("Jaison");
+        boolean result = validator.isValidLastName("Jaison");
         Assertions.assertEquals(result,true);
     }
     /*
@@ -35,7 +36,7 @@ class ValidatorTest
     @Test
     public void givenEmailWhenCheckReturnValidOrNot()
     {
-        boolean result = Validator.isValidEmail("jeswin2711@gmail.com");
+        boolean result = validator.isValidEmail("jeswin2711@gmail.com");
         Assertions.assertEquals(result,true);
     }
     /*
@@ -44,7 +45,7 @@ class ValidatorTest
     @Test
     public void givenPhoneNumberWhenCheckReturnValidOrNot()
     {
-        boolean result = Validator.isValidPhoneNo("91 6379984919");
+        boolean result = validator.isValidPhoneNo("91 6379984919");
         Assertions.assertEquals(result,true);
     }
     /*
@@ -53,7 +54,7 @@ class ValidatorTest
     @Test
     public void givenPasswordWhenCheckReturnValidOrNot()
     {
-        boolean result = Validator.isValidPassword("Jeswin@2711");
+        boolean result = validator.isValidPassword("Jeswin@2711");
         Assertions.assertEquals(result,true);
     }
 }
