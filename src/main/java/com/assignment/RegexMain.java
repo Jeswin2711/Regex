@@ -8,7 +8,7 @@ public class RegexMain
     Main Function to Get the firstName from the User
      */
     public static void main(String[] args) {
-        RegexModel regex = new RegexModel();
+        User regex = new User();
         System.out.println("Welcome To Regex Problem");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter First Name : ");

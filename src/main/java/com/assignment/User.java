@@ -1,16 +1,15 @@
 package com.assignment;
 
 /*
-RegexModel class acts as a Encapsulated class with getter and setter
+User class acts as a Encapsulated class with getter and setter
  */
-public class RegexModel
+public class User
 {
     private String firstName;
     private String lastName;
     private String emailId;
     private String phoneNo;
     private String passWord;
-    private String mail;
 
     public String getPassWord() {
         return passWord;
