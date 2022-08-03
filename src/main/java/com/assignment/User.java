@@ -15,12 +15,13 @@ public class User
         return passWord;
     }
 
+    Validator validator = new Validator();
     public void setPassWord(String passWord) {
         /*
         Using Exception Handling when the entered Password is Invalid
          */
         try {
-            if(Validator.isValidPassword(passWord))
+            if(validator.isValidPassword(passWord))
             {
                 this.passWord = passWord;
             }
@@ -41,7 +42,7 @@ public class User
         Using Exception Handling when the entered Phone Number is Invalid
          */
         try {
-            if(Validator.isValidPhoneNo(phoneNo))
+            if(validator.isValidPhoneNo(phoneNo))
             {
                 this.phoneNo = phoneNo;
             }
@@ -66,7 +67,7 @@ public class User
         Using Exception Handling when the entered Email Id is Invalid
          */
         try {
-            if(Validator.isValidEmail(emailId))
+            if(validator.isValidEmail(emailId))
             {
                 this.emailId = emailId;
             }
@@ -81,7 +82,7 @@ public class User
         Using Exception Handling when the entered Last Name is Invalid
          */
         try {
-            if(Validator.isValidLastName(lastName))
+            if(validator.isValidLastName(lastName))
             {
                 this.lastName = lastName;
             }
@@ -101,7 +102,7 @@ public class User
         Using Exception Handling when the entered First Name is Invalid
          */
         try {
-            if(Validator.isValidFirstName(firstName))
+            if(validator.isValidFirstName(firstName))
             {
                 this.firstName = firstName;
             }
@@ -115,7 +116,7 @@ public class User
     Setter method to check the Hardcoded mailIds are Valid or not
      */
     public void setMail(String mail) {
-        if(Validator.isValidEmail(mail))
+        if(validator.isValidEmail(mail))
         {
             System.out.println(mail + " is Valid Email");
         }

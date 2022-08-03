@@ -1,6 +1,7 @@
 package com.assignment;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class RegexMain
 {
@@ -38,8 +39,6 @@ public class RegexMain
         regex.setMail("abc@1.com");
         regex.setMail("abc@gmail.com.com");
         regex.setMail("abc+100@gmail.com");
-
-
 
     }
 }
